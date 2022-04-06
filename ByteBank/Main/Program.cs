@@ -120,35 +120,8 @@ namespace ByteBank.Main
 
             TestDeposita.DepositaValorNegativo(100);
             TestSacar.SacarValorNegativo(100);
-            TestTransferir.TransferirValorNegativo(500);
-        }
+            TestTransferir.TransferirValorNegativo(50);
 
-        public static void metodo()
-        {
-            try 
-            {
-            Dividir(1,0);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Cliente cliente = null;
-            Console.WriteLine(cliente.Profissao);            
-
-        }
-
-        public static int Dividir(int numero, int divisor)
-        {
-            try
-            {
-                return numero / divisor;
-            } 
-            catch (Exception e)
-            {
-                throw;
-            }           
         }
     }
 }
