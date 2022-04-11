@@ -7,6 +7,7 @@ namespace ByteBank.Exceptions
     public class SaldoInsuficienteException : OperacaoFinanceiraException
     {
         public double Saldo { get; }
+
         public double ValorSaque { get; }
 
         public SaldoInsuficienteException()

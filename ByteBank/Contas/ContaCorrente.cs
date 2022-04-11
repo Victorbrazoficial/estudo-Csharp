@@ -80,7 +80,7 @@ namespace ByteBank.Contas
         public void ConfereNumeroEAgencia(int agencia, int numero)
         {
             if (agencia <= 0)
-                throw new ArgumentException("Agencia não pode ser menor ou igual a 0.", nameof(agencia));
+                throw new ArgumentException("Exception -> Agencia não pode ser menor ou igual a 0.", nameof(agencia));
 
             if (numero <= 0)
                 throw new ArgumentException("Numero não pode ser menor ou igual 0.", nameof(numero));

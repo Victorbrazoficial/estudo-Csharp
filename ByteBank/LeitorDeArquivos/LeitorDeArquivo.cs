@@ -3,7 +3,7 @@ using System.IO;
 
 namespace ByteBank.LeitorDeArquivos
 {
-    internal class LeitorDeArquivo : IDisposable
+    public class LeitorDeArquivo : IDisposable
     {
         public string Arquivo { get; }
 
@@ -19,8 +19,6 @@ namespace ByteBank.LeitorDeArquivos
         public string LerProximaPagina()
         {
             Console.WriteLine("Lendo Linha.");
-
-            //throw new IOException();
 
             return "Linha do arquivo";
         }
